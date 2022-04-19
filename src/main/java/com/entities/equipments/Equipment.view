@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<query>
+	<select><![CDATA[
+		SELECT	EQUIPMENT_ID,
+				EQUIPMENT_NAME,
+				EQUIPMENT_WELL_ID
+				FROM EQUIPMENT
+	]]></select>
+	<order-by>EQUIPMENT_NAME</order-by>
+</query>

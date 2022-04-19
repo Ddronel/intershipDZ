@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="windows-1251" standalone="no"?>
+<SessionConfig>
+
+	<mapping id="com.entities.wells.Wells">
+		<class name="com.entities.wells.Well"/>
+		<entity name="com/entities/wells/Well.entity"/>
+		<view name="com/entities/wells/Well.view"/>
+	</mapping>
+	
+	<mapping id="com.entities.equipments.Equipment">
+		<class name="com.entities.equipments.Equipment"/>
+		<entity name="com/entities/equipments/Equipment.entity"/>
+		<view name="com/entities/equipments/Equipment.view"/>
+	</mapping>
+	
+</SessionConfig>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="windows-1251" ?>
+<class-mapping>
+	<class name="com.entities.equipments.Equipment">
+		<id name = "equipmentId" type="java.math.BigDecimal" column="EQUIPMENT_ID"/>
+		<attribute name="equipmentName" type="java.lang.String" column="EQUIPMENT_NAME" mandatory="false"/>
+		<attribute name="equipmentWellId" type="java.math.BigDecimal" column="EQUIPMENT_WELL_ID" mandatory="false"/>
+		
+		<insert>
+			<sql clause="
+				INSERT INTO EQUIPMENT (EQUIPMENT_ID, EQUIPMENT_NAME, EQUIPMENT_WELL_ID)
+					VALUES (?, ?, ?)">
+				<attribute name="equipmentId"/>
+				<attribute name="equipmentName"/>
+				<attribute name="equipmentWellId"/>
+			</sql>
+		</insert>
+		
+		<update>
+			<sql clause="
+				UPDATE EQUIPMENT
+					SET EQUIPMENT_NAME = ?,
+						EQUIPMENT_WELL_ID = ?
+					WHERE EQUIPMENT_ID = ?">
+				<attribute name="equipmentName"/>
+				<attribute name="equipmentWellId"/>
+				<attribute name="equipmentId"/>
+			</sql>		
+		</update>
+		
+		<delete>
+			<sql clause="
+				DELETE FROM EQUIPMENT
+					WHERE EQUIPMENT_ID = ?">
+				<attribute name="equipmentId"/>
+			</sql>
+		</delete>
+		
+	</class>
+</class-mapping>								

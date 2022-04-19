@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<query>
+	<select><![CDATA[
+		SELECT	WELL_ID,
+				WELL_NAME
+				FROM WELL
+	]]></select>
+	<order-by>WELL_NAME</order-by>
+</query>	
